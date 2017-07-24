@@ -1,0 +1,27 @@
+ <view class="outclass">
+  <form bindsubmit="formSubmit">
+  <!--格式需再调整-->
+      <view class="itemView">              
+          <text class="text_class">信息类型：</text>
+          <picker mode = "selector" bindchange="bindPickerMaleChange" value="{{index}}" range="{{infotypes}}">
+          <view  class="input">
+          <input bindinput="maleinput"  class="input_explan" disabled="true" name="infotype" value="{{infotypes[index]}}"/> 
+          </view> 
+          </picker>
+      </view>
+      <view class="itemView_c">
+        <text class="text_class">上传图片：</text> 
+        <view wx:for="{{list}}" wx:for-item="item" bindtap="chooseimage">
+           <image src="{{item.url}}" mode="aspecFill" class="imageclasspic"/> 
+        </view>
+      </view>
+      <view class="itemView">
+         <text class="text_class">管理员上传码：</text>
+         <input bindinput="checkInput" maxlength="4" type="number" class="inputcode" name="checkcode" confirm-type="done"/>
+        </view>
+        <view class="btn-class">
+          <button  class = "btnStyl" hover-class = 'other-button-hover' formType="submit">提交</button>
+          <button  class = "btnStylrst" hover-class = 'other-button-hover'  bindtap="formReset">重置</button>
+        </view> 
+  </form>
+</view>

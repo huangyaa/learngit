@@ -1,0 +1,75 @@
+.info {
+   display: flex; 
+   flex-direction: row;
+   align-items: stretch;
+   height: 80px;
+   width: 90%;
+   margin: 20rpx auto;
+   border-bottom: 2rpx solid #C9C9C9;
+   /*background: #E8E8E8;*/
+} 
+
+.eee {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 60%;
+  height: 80px;
+} 
+
+.payclass{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  height: 80px;
+}
+
+.container1 {
+  flex-direction: column;
+} 
+
+tips1{
+   height: 60px;
+}
+
+r1{
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   align-self: center;
+   justify-content: center;
+}
+.serch{
+   width: 90%;
+   height: 15%;
+   display: flex; 
+   flex-direction: row;
+   align-items: center;
+   align-self: center;
+   justify-content: center;
+   margin-left: 20px;
+   border-bottom: 2rpx solid #C9C9C9;
+}
+.input{
+   width: 150px;
+   height: 30px;
+   margin-left: 20%;
+   margin-top: 5px;
+   margin-bottom: 5px;
+   padding-left: 5px;
+   border: 2rpx solid #C9C9C9;
+   border-radius: 25px;
+}
+.buttonclass{
+   width: 60px;
+   height: 30px;
+   margin-top: 5px;
+   margin-bottom: 5px;
+   font-size: 14px;
+   margin-left: 15px;
+}
+.pclass{
+  font-size: 12px;
+  font-style: italic ;
+  color: #D4D4D4;
+}

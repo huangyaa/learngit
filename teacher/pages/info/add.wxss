@@ -1,0 +1,103 @@
+/* pages/info/add.wxss */ 
+/*总体主盒子  */
+.addcontainer {  
+  position: absolute;  
+  width: 100%;  
+  height: 100%;    
+  color: #939393;  
+}  
+  
+/*右侧栏主盒子*/  
+.nav_right{  
+  /*右侧盒子使用了绝对定位*/  
+  position: absolute;  
+  top: 0;  
+  right: 0;  
+  flex: 1;  
+  /*宽度75%，高度占满，并使用百分比布局*/  
+  width: 100%;  
+  height: 100%; 
+  font-size: 15px;  
+}  
+.other-button-hover {
+  font-size:20px;
+  font-weight:600;
+}
+.btnStyl{
+  font-size: 14px;
+  background-color: #98FB98;
+}
+.btnStylrst{
+  font-size: 14px;
+  background-color: #FF6347;
+}
+.btn-class{
+  display: flex;
+  flex-direction: row;
+  padding-top: 20px;
+}
+.btn-del{
+  margin-top: 20px;
+}
+.itemView{
+   margin-top: 10px;
+   margin-left: 5px;
+   margin-right: 10px;
+   height: 30px;
+   justify-content: flex-start;
+   display: flex;
+   align-items: center;
+} 
+.itemView_c{
+   margin-top: 10px;
+   margin-left: 5px;
+   margin-right: 10px;
+   height: 50px;
+   justify-content: flex-start;
+   display: flex;
+   align-items: center;
+}
+.input{
+  width: 180px;
+  height: 30px; 
+  margin-top: 5px;
+  padding-left: 10px;
+  align-items: center;
+  border: 1px solid lightgray;
+  border-radius: 25px; 
+} 
+
+.course{
+  width: 210px;
+  height: 50px; 
+  padding-top: 10px;
+  padding-left: 5px;
+}
+
+.inputClass{
+  width: 88px;
+  height: 30px; 
+  padding-left: 5px;
+  align-items: center;
+  border: 1px solid lightgray;
+  border-radius: 25px; 
+} 
+.input_explan{
+  width: 40%;
+  height: 100%;
+}
+.inputClass_explan{
+  width: 60%;
+  height: 100%;
+}
+.text_class{
+  width: 90px;
+  height: 10px; 
+  padding-left: 20px;
+  text-align: center;
+}
+.pclass{
+  font-size: 12px;
+  font-style: italic ;
+  color: #D4D4D4;
+}

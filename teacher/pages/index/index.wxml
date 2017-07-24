@@ -1,0 +1,58 @@
+
+<view class='pageInfo' style=" background-size:cover;">
+  <view class="classname">
+    <swiper class="swiper" indicator-dots="true" autoplay="true" interval="4000" duration="1000">    
+      <block wx:for="{{movies}}" wx:for-index="index">   
+        <swiper-item>    
+          <image src="{{item}}" class="slide-image" mode="scaleToFill"/>    
+        </swiper-item> 
+         </block>    
+    </swiper> 
+  </view>
+  <view class="sortCss">
+      <view class="userfirst" >
+        <view class="usermotto">
+          <image src="../images/studeyEnv.png" class="secimage" mode="scaleToFill"/> 
+          <text class="infoOne">精品课程</text>
+        </view>
+  
+         <view class="coursecolunm">
+           <view class="courseClass">
+            <image class="courseImg" mode="scaleToFill" src="{{listcourse[0]}}" />
+             <image class="courseImg" mode="scaleToFill" src="{{listcourse[1]}}" />
+            </view>
+            <view class="courseClass">
+             <image class="courseImg" mode="scaleToFill" src="{{listcourse[2]}}" />
+             <image class="courseImg" mode="scaleToFill" src="{{listcourse[3]}}" />
+             </view>
+         </view>
+       </view>
+
+       <view class="usersec">
+        <view class="usermotto">
+          <image src="../images/teacher.png" class="secimage" mode="scaleToFill"/>
+          <text class="infoOne">名师资源</text>
+        </view>
+        <scroll-view class="scroll_x_box" scroll-x="true"  bindscrolltolower="loadMore" bindscrolltoupper="refesh">
+         <view class="userimg"  wx:for="{{list}}" wx:for-item="item" bindtap="bindViewTap" 
+             data-title="{{item.name}}">
+             <view class="teacherSty">
+              <image style=" width:70px;height:70px;margin-left: 10rpx;" src="{{item.selfImg}}" ></image>
+              <text style="margin-top:5px;margin-left:5px;font-size:13px">{{item.name}}</text>
+             </view>
+         </view>
+       </scroll-view>
+      </view>
+
+      <view class="userthird">
+        <view class="usermotto">
+          <image src="../images/price.png" class="secimage" mode="scaleToFill"/>
+          <text class="infoOne">特色套餐</text>
+        </view>
+        <view class="speImg">
+            <image class="speClass" mode="scaleToFill" src="{{speUrl[0]}}" />
+             <image class="speClass" mode="scaleToFill" src="{{speUrl[1]}}" />
+        </view>
+      </view>
+  </view>
+</view>

@@ -1,0 +1,40 @@
+<view class="classname">
+   <view class='userinfo'>
+     <image class="userinfo-avatar" src="{{imgUrl}}" background-size="cover"/>
+   </view>
+   <view class='content'>
+       <view class='basicview'>
+         <text class='basictext'>基本信息</text>
+       </view>
+       <text class="text_class">姓   名：{{name}}</text>
+       <text class="text_class">性   别：{{male}}</text>
+       <text class="text_class">年   级：{{grade}}{{class}}年级</text>
+       <text class="text_class">课   程：{{courses}}</text>
+       <text class="text_class">是否缴费：{{ispay}}</text>
+   </view>
+   <view class='appraiseClass'>
+       <view class='basicview'>
+          <text class="basictext">老师评语</text>
+       </view>
+       <view wx:if="{{isTeacher}}">
+          <textarea  class="inputTeacher" bindconfirm="appraiseInput" auto-height type="text" name="appraise" value='{{comment}}' confirm-type="done"/>
+          <view class="payview">
+            <text class="radioText">是否缴费：</text>
+            <view class="radioview">
+              <radio-group class= "radio" bindchange="radioChange">
+                <label wx:for="{{choicepay}}">
+                  <radio value="{{item.value}}" />{{item.value}}
+                </label>
+              </radio-group>
+            </view>
+          </view>
+          <view class="btn-class">
+          <button  class = "btnStyl" hover-class = 'other-button-hover' bindtap="formSub">提交</button>
+          <button  class = "btnStylrst" hover-class = 'other-button-hover' bindtap="formReset">重置</button>
+          </view> 
+        </view>
+        <view wx:else>
+          <textarea  class="input" bindconfirm="appraiseInput" auto-height type="text"  disabled='true' name="appraise" value='{{comment}}' confirm-type="done"/>
+        </view>
+   </view>
+</view>

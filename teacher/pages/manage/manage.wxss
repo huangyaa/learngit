@@ -1,0 +1,81 @@
+.outclass{
+  width: 100%;
+  height: 100%; 
+  margin-top: 20px;
+}
+.other-button-hover {
+  font-size:20px;
+  font-weight:600;
+}
+.btnStyl{
+  font-size: 14px;
+  background-color: #98FB98;
+ 
+  margin-left:50px; 
+}
+.btnStylrst{
+  font-size: 14px;
+  background-color: #FF6347;
+}
+.btn-class{
+  margin-top: 40px;
+  width: 100%;
+  height: 40px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.itemView{
+   margin-top: 10px;
+   margin-left: 5px;
+   margin-right: 10px;
+   height: 30px;
+   justify-content: flex-start;
+   display: flex;
+   align-items: center;
+} 
+.itemView_c{
+   margin-top: 10px;
+   margin-left: 5px;
+   margin-right: 10px;
+   width: 100%;
+   height: 80px;
+   justify-content: flex-start;
+   display: flex;
+   align-items: center;
+}
+
+.imageclasspic{
+  width: 50px; 
+  height: 60px; 
+  margin-left:5px;
+}
+.input{
+  width: 180px;
+  height: 30px;
+  margin-bottom: 15px;
+  align-items: center;
+  border: 1px solid lightgray;
+  border-radius: 25px; 
+} 
+.input_explan{
+  width: 100px;
+  height: 30px;
+  margin-left: 7px;
+  font-size: 14px;
+}
+.text_class{
+  width: 120px;
+  height: 30px; 
+  font-size: 16px;
+  padding-left: 10px;
+  text-align: center;
+}
+.inputcode{
+  width: 180px;
+  height: 30px;
+  padding-left: 10px;
+  align-items: center;
+  border: 1px solid lightgray;
+  border-radius: 25px; 
+} 

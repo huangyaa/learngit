@@ -1,0 +1,56 @@
+<view class="addcontainer">   
+  <view class="nav_right">  
+    <view class="section__ctn">
+            <image style="width: 100%; height: 230px;" mode="{mode}}" src="{{src}}"></image>
+    </view>
+    <view> 
+      <form bindsubmit="formSubmit">
+        <view class="itemView">
+        <text class="text_class">姓  名：</text>
+        <input bindinput="nameInput"  type="text" class="input" name="userName" placeholder="李雷" value='{{name}}'placeholder-class="pclass" confirm-type="done"/>
+        </view>
+
+      <view class="itemView">               
+        <text class="text_class">性  别：</text>
+        <picker mode = "selector" bindchange="bindPickerMaleChange" value="{{indexMale}}" range="{{arrayMale}}">
+        <view  class="input">
+        <input bindinput="maleinput"  class="input_explan" disabled="true" name="male" value="{{arrayMale[indexMale]}}"/> 
+         </view> 
+        </picker>
+        </view>
+
+        <view class="itemView">
+         <text class="text_class">联系方式：</text>
+         <input bindinput="mobileInput" maxlength="11" type="number" class="input" name="mobileNum" value='{{phone}}'confirm-type="done"/>
+        </view>
+
+        <view class="itemView_c">
+        <text class="text_class">选择课程：</text>
+         <view class="course">
+         <checkbox-group bindchange="courseboxChange">
+          <label class="checkbox" wx:for="{{courses}}">
+            <checkbox value="{{item.name}}" />{{item.value}}
+          </label>
+         </checkbox-group> 
+         </view>       
+        </view>
+
+        <view class="itemView">
+         <text class="text_class">教师识别码：</text>
+         <input bindinput="checkInput" maxlength="4" type="number" class="input" name="checkcode" confirm-type="done"/>
+        </view>
+        <view class="itemView_c">
+           <text class="text_class">上传图片：</text> 
+           <image src="{{tempFilePath }}" bindtap="chooseimage" mode="aspecFill" style="width: 17%; height: 50px"/> 
+        </view>
+        <view class="btn-class">
+          <button  class = "btnStyl" hover-class = 'other-button-hover' formType="submit">提交</button>
+          <button  class = "btnStylrst" hover-class = 'other-button-hover' formType="reset">重置</button>
+        </view> 
+        <view class="btn-class" wx:if='{{isUpdate==true}}'>
+           <text style='margin-left:30px;font-size:16px;color:#EE0000'>信息已注册,再次提交即可修改</text>
+        </view> 
+      </form>
+    </view> 
+  </view>   
+</view>  

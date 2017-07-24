@@ -1,0 +1,42 @@
+{
+  "pages":[
+    "pages/index/index",
+    "pages/students/studentlist",
+    "pages/info/add",
+    "pages/manage/manage",
+    "pages/teachers/teacher",
+    "pages/myself/myself",
+    "pages/introduce/introduce",
+    "pages/detailStudent/detailStudent"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "志明教育培训平台",
+    "navigationBarTextStyle":"black"
+  },
+  "tabBar": {
+    "color": "#a9b7b7",
+    "selectedColor": "#11cd6e",
+    "borderStyle": "black",
+    "backgroundColor": "#DEDEDE",
+    "list": [
+      {
+        "selectedIconPath": "pages/images/first2.png",
+        "iconPath": "pages/images/first1.png",
+        "pagePath": "pages/index/index",
+        "text": "首页"
+      },{
+        "selectedIconPath": "pages/images/barrage.png",
+        "iconPath": "pages/images/barrage_fill.png",
+        "pagePath": "pages/students/studentlist",
+        "text": "在校生"
+      },{
+        "selectedIconPath": "pages/images/add2.png",
+        "iconPath": "pages/images/add1.png",
+        "pagePath": "pages/myself/myself",
+        "text": "我的"
+      }
+    ]
+  }
+}

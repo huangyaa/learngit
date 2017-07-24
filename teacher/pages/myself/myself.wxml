@@ -1,0 +1,36 @@
+<view>
+   <view  class="userinfo">
+    <image class="userinfo-avatar" src="{{userInfo.avatarUrl}}" background-size="cover"></image>
+    <text class="userinfo-nickname">{{userInfo.nickName}}    </text>
+  </view>
+  <view class="infoclass">
+   <navigator url="../info/add" open-type="navigate">
+     <view class="itemCont">
+        <image mode="scaleToFill"  class="img" src="../images/stureg.png" />
+        <text class="Mess1">报名入学</text>
+        <image mode="scaleToFill"  class="more" src="../images/more.png" />
+      </view>
+   </navigator>
+   <navigator url="../teachers/teacher" open-type="navigate">
+     <view class="itemCont">
+        <image mode="scaleToFill" class="img"  src="../images/terreg.png" />
+        <text class="Mess1" >注册授课</text>
+        <image mode="scaleToFill"  class="more" src="../images/more.png" />
+      </view>
+   </navigator>
+   <navigator url="../manage/manage" open-type="navigate">
+     <view class="itemCont">
+        <image mode="scaleToFill" class="img"  src="../images/manage.png" />
+        <text class="Mess1" >页面信息管理</text>
+        <image mode="scaleToFill"  class="more" src="../images/more.png" />
+      </view>
+   </navigator>
+    <navigator url="../introduce/introduce" open-type="navigate">
+     <view class="itemCont">
+        <image mode="scaleToFill" class="img" src="../images/self.png" />
+         <text class="Mess1">关于我们</text>
+         <image mode="scaleToFill"  class="more" src="../images/more.png" />
+      </view>
+   </navigator>
+  </view>
+</view>
